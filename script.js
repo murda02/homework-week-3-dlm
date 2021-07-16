@@ -47,6 +47,8 @@ function generatePassword() {
   
     else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "NO" && specialCharacters === "NO") {
     characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  } else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "NO" && specialCharacters === "YES") {
+    characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+-=<>[]{}\/;':";
   } else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "YES" && specialCharacters === "NO") {
     characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   } else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "YES" && specialCharacters === "YES") {
