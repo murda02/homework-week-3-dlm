@@ -21,16 +21,12 @@ generateBtn.addEventListener("click", function () {
     } else {
       // alert("Winner!");
     }
-
   } else {
     alert("You either entered a number out of range, entered a non integer, or hit cancel. Game over.");
   }
-
 });
 
-
 // Generates a password
-
 function generatePassword() {
   
   var characterSet = "";
@@ -43,9 +39,7 @@ function generatePassword() {
     characterSet = "abcdefghijklmnopqrstuvwxwyABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   } else if (lowercaseVar === "YES" && uppercaseVar === "YES" && numericVar === "YES" && specialCharacters === "YES"){
     characterSet = "abcdefghijklmnopqrstuvwxwyABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+-=<>[]{}\/;':";
-  } 
-  
-    else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "NO" && specialCharacters === "NO") {
+  } else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "NO" && specialCharacters === "NO") {
     characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   } else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "NO" && specialCharacters === "YES") {
     characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+-=<>[]{}\/;':";
@@ -53,17 +47,13 @@ function generatePassword() {
     characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   } else if (lowercaseVar === "NO" && uppercaseVar === "YES" && numericVar === "YES" && specialCharacters === "YES") {
     characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*()_+-=<>[]{}\/;':";
-  } 
-  
-    else if (lowercaseVar === "NO" && uppercaseVar === "NO" && numericVar === "YES" && specialCharacters === "NO") {
+  } else if (lowercaseVar === "NO" && uppercaseVar === "NO" && numericVar === "YES" && specialCharacters === "NO") {
     characterSet = "0123456789";
   } else if (lowercaseVar === "YES" && uppercaseVar === "NO" && numericVar === "YES" && specialCharacters === "NO") {
     characterSet = "abcdefghijklmnopqrstuvwxwy0123456789";
   } else if (lowercaseVar === "YES" && uppercaseVar === "NO" && numericVar === "YES" && specialCharacters === "YES") {
     characterSet = "abcdefghijklmnopqrstuvwxwy0123456789~!@#$%^&*()_+-=<>[]{}\/;':";
-  } 
-  
-    else if (lowercaseVar === "NO" && uppercaseVar === "NO" && numericVar === "NO" && specialCharacters === "YES") {
+  } else if (lowercaseVar === "NO" && uppercaseVar === "NO" && numericVar === "NO" && specialCharacters === "YES") {
     characterSet = "~!@#$%^&*()_+-=<>[]{}\/;':";
   } else if (lowercaseVar === "YES" && uppercaseVar === "NO" && numericVar === "NO" && specialCharacters === "YES") {
     characterSet = "abcdefghijklmnopqrstuvwxwy~!@#$%^&*()_+-=<>[]{}\/;':";
